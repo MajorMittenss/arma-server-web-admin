@@ -8,7 +8,7 @@ var config = require('./config')
 var setupBasicAuth = require('./lib/setup-basic-auth')
 var Manager = require('./lib/manager')
 var Missions = require('./lib/missions')
-var Mods = require('./lib/mods')
+var SteamMods = require('./lib/steam_mods')
 var Logs = require('./lib/logs')
 
 var app = express()
@@ -27,12 +27,12 @@ app.use(serveStatic(path.join(__dirname, 'public')))
 
 var logs = new Logs(config)
 
-var manager = new Manager(config, logs)
-manager.load()
-
 var missions = new Missions(config)
-var mods = new Mods(config)
+var mods = new SteamMods(config)
 mods.updateMods()
+
+var manager = new Manager(config, logs, mods)
+manager.load()
 
 app.use('/api/logs', require('./routes/logs')(logs))
 app.use('/api/missions', require('./routes/missions')(missions))
