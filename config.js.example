@@ -13,6 +13,7 @@ module.exports = {
     '@mod2',
   ],
   steam: {
+    apiKey: '1234567890ABCDE', // https://steamcommunity.com/dev/apikey
     path: 'path-to-main-steam-folder',
   },
   admins: [], // add steam IDs here to enable #login without password
