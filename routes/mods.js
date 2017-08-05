@@ -8,7 +8,7 @@ module.exports = function (modsManager) {
   })
 
   router.post('/', function (req, res) {
-    modsManager.download(req.body.name)
+    modsManager.download(req.body.id)
     res.status(204).send()
   })
 

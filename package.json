@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "arma-server": "0.0.6",
-    "arma-steam-workshop": "https://github.com/Dahlgren/node-arma-steam-workshop/tarball/0d5025348fab6d4896931078753d588b07f548c4",
+    "arma-steam-workshop": "https://github.com/Dahlgren/node-arma-steam-workshop/tarball/1e5ecab99eb26650d6c24fa4bacfff3eddb30b12",
     "async": "^0.9.0",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",

@@ -41,7 +41,7 @@ define(function (require) {
         url: "/api/mods/",
         type: 'POST',
         data: {
-          name: this.model.get('name'),
+          id: this.model.get('id'),
         },
         dataType: 'json',
         success: function (resp) {
