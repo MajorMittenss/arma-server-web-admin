@@ -21,8 +21,8 @@ define(function (require) {
 
     templateHelpers: {
       progress: function() {
-        if (this.mods.get(this.name)) {
-          return this.mods.get(this.name).get('progress');
+        if (this.mods.get(this.id)) {
+          return this.mods.get(this.id).get('progress');
         }
 
         return null;
