@@ -10,13 +10,14 @@ A simple to use web admin panel for Arma servers.
 
 - Create multiple instances of game servers in the same admin panel
 - See server status queryed from the instances with current mission and players
-- Download game logs
+- Download RPT logs
 - Upload missions from your local computer and from Steam Workshop to the server
 - Download and update mods from withSIX
 
 ## Requirements
 
 - Node.js, https://nodejs.org/
+- NPM installed.
 - Pre-installed Arma Server
 
 ## Supported Platforms
@@ -46,7 +47,7 @@ port | Web port to use
 host | IP or Hostname to listen on
 type | Which kind of server to use, can be 'linux', 'windows' or 'wine'
 parameters | Extra startup parameters added to servers and headless clients
-serverMods | Mods that always and only will be used by the game servers
+serverMods | Mods that always and only will be used by the game servers *Includes every single server*
 auth | If both username and password is set, HTTP Basic Auth will be used
 prefix | Text prepended to all game servers name
 suffix | Text appended to all game servers name
