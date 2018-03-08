@@ -19,6 +19,5 @@ module.exports = {
   },
   prefix: "", // Prefix to all server names
   suffix: "", // Suffix to all server names
-  logFormat: "dev", // expressjs/morgan log format
-  servercommandpassword: "L33t12" // Change me.
+  logFormat: "dev" // expressjs/morgan log format
 };
