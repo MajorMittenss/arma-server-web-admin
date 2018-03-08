@@ -1,7 +1,7 @@
 module.exports = {
   game: 'arma3', // arma3, arma2oa, arma2, arma1, cwa, ofpresistance, ofp
   path: 'path-to-arma3-directory',
-  port: 3000,
+  port: 3000, // Port for the web panel to listen on
   host: '0.0.0.0', // Can be either an IP or a Hostname
   type: 'linux', // Can be either linux, windows or wine
   parameters: [ // Additional startup parameters used by all servers
@@ -20,4 +20,5 @@ module.exports = {
   prefix: "", // Prefix to all server names
   suffix: "", // Suffix to all server names
   logFormat: "dev", // expressjs/morgan log format
+  servercommandpassword: "L33t12" // Change me.
 };
